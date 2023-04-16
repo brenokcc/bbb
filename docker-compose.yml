@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     volumes:
-      - ./docker/media:/opt/app/media
+      - .docker/media:/opt/app/media
     depends_on:
       postgres:
         condition: service_healthy
