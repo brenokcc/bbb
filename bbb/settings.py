@@ -127,6 +127,9 @@ MEDIA_ROOT = '{}/{}'.format(BASE_DIR, 'media')
 STATIC_ROOT = '{}/{}'.format(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 
+CLOUD_PROVIDER_API_URL = os.environ.get('CLOUD_PROVIDER_API_URL', 'https://deploy.cloud.aplicativo.click')
+CLOUD_PROVIDER_API_TOKEN = os.environ.get('CLOUD_PROVIDER_API_TOKEN', '0123456789')
+
 CSRF_TRUSTED_ORIGINS = [
     'http://*.local.aplicativo.click',
     'https://*.cloud.aplicativo.click',
