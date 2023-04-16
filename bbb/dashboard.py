@@ -15,7 +15,7 @@ class AppDashboard(Dashboard):
         self.header(title='Sloth', shadow=True)
         self.settings_menu('change_password')
         self.tools_menu('show_icons')
-        self.footer(title='© 2022 Sloth', text='Todos os direitos reservados', version='1.0.4')
+        self.footer(title='© 2022 Sloth', text='Todos os direitos reservados', version='1.0.5')
 
     def view(self):
         return self.value_set()
